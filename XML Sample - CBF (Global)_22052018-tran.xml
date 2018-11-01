@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:TransportExecutionPlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+                            xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                            xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+                            xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                            xmlns:dsig11="http://www.w3.org/2009/xmldsig11#"
+                            xmlns:ns0="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2"
+                            xmlns:ns1="http://uri.etsi.org/01903/v1.4.1#"
+                            xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                            xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+                            xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2"
+                            xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
+                            xmlns:cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
+                            xmlns:ns3="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
+                            xmlns:ns2="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2"
+                            xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2 ../UBL-2.2/xsd/maindoc/UBL-TransportExecutionPlan-2.2.xsd">
+   <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
+   <cbc:CustomizationID>Common Framework</cbc:CustomizationID>
+   <cbc:ProfileID>CBF</cbc:ProfileID>
+   <cbc:ID>2018-5-728341</cbc:ID>
+   <cbc:UUID>419097</cbc:UUID>
+   <cbc:IssueDate>2018-05-22</cbc:IssueDate>
+   <cbc:IssueTime>11:55:30.000</cbc:IssueTime>
+   <cac:SenderParty>
+      <cac:PartyIdentification>
+         <cbc:ID>FwdRepCust</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:Contact>
+         <cbc:ID>Nav</cbc:ID>
+      </cac:Contact>
+   </cac:SenderParty>
+   <cac:TransportUserParty>
+      <cac:PartyIdentification>
+         <cbc:ID>LYI</cbc:ID>
+      </cac:PartyIdentification>
+   </cac:TransportUserParty>
+   <cac:TransportServiceProviderParty>
+      <cac:PartyIdentification>
+         <cbc:ID>SYN</cbc:ID>
+      </cac:PartyIdentification>
+   </cac:TransportServiceProviderParty>
+   <cac:MainTransportationService>
+      <cbc:TransportServiceCode>Global</cbc:TransportServiceCode>
+   </cac:MainTransportationService>
+   <cac:FromLocation>
+      <cbc:Description>Unit</cbc:Description>
+      <cac:Address>
+         <cbc:MarkAttention>yunfu</cbc:MarkAttention>
+         <cbc:CityName>Xiaolan</cbc:CityName>
+         <cbc:PostalZone>534780</cbc:PostalZone>
+         <cac:Country>
+            <cbc:Name>China</cbc:Name>
+         </cac:Country>
+      </cac:Address>
+   </cac:FromLocation>
+   <cac:ToLocation>
+      <cac:Address>
+         <cbc:StreetName>MLA Colony</cbc:StreetName>
+         <cbc:MarkAttention>Jhon</cbc:MarkAttention>
+         <cbc:CityName>Oudenaarde</cbc:CityName>
+         <cbc:PostalZone>9700</cbc:PostalZone>
+         <cac:Country>
+            <cbc:Name>Belgium</cbc:Name>
+         </cac:Country>
+      </cac:Address>
+   </cac:ToLocation>
+   <cac:TransportExecutionTerms>
+      <cbc:DepotSelectionCode>Automatic</cbc:DepotSelectionCode>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>104</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">10.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>104</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">7.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>303</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">10.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>303</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">20.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">100.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">100.0</cbc:BaseAmount>
+               <cbc:PerUnitAmount currencyID="EUR">100.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>104</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">10.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>104</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">7.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>303</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">10.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>303</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">20.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Zhaoqing
+                    Terminal-ROAD-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">100.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">100.0</cbc:BaseAmount>
+               <cbc:PerUnitAmount currencyID="EUR">100.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Xiaolan
+                    Terminal-RAIL-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>10.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">310.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">300.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>STD-01</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">300.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Xiaolan
+                    Terminal-RAIL-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>10</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">40.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Zhaoqing Terminal-CN 528415_Xiaolan
+                    Terminal-RAIL-MAEU-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">0.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">0.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>303</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">20.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Xiaolan Terminal-BE 2040_MSC PSA European Terminal MPET
+                    (730)-SEA-CPM-2018-3</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="USD">500.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="USD">500.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>STD-01</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="USD">500.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>CN 528415_Xiaolan Terminal-BE 2040_MSC PSA European Terminal MPET
+                    (730)-SEA-CPM-2018-3</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>MAERSK</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="USD">60.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="USD">60.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>181</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="USD">60.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>BE _Antwerpen terminals-BE 8580_Avelgem Container Terminal
+                    (AVCT)-BARGE-AVCT -2017-2</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>AVELGEM CONTAINER TERMINAL</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">230.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">230.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>STD-01</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">230.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>BE 8580_Avelgem Container Terminal (AVCT)-BE 8580_Avelgem Container
+                    Terminal (AVCT)-ROAD-GOSSELIN-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>AVELGEM CONTAINER TERMINAL</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">110.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">110.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>STD-01</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">110.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>BE 8580_Avelgem Container Terminal (AVCT)-BE 8580_Avelgem Container
+                    Terminal (AVCT)-ROAD-GOSSELIN-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>AVELGEM CONTAINER TERMINAL</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">200.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">200.0</cbc:BaseAmount>
+               <cbc:PerUnitAmount currencyID="EUR">200.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>BE 8580_Avelgem Container Terminal (AVCT)-BE 8580_Avelgem Container
+                    Terminal (AVCT)-ROAD-GOSSELIN-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>AVELGEM CONTAINER TERMINAL</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">110.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">110.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>STD-01</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="EUR">110.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-728341-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>BE 8580_Avelgem Container Terminal (AVCT)-BE 8580_Avelgem Container
+                    Terminal (AVCT)-ROAD-GOSSELIN-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>AVELGEM CONTAINER TERMINAL</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <cbc:MultiplierFactorNumeric>0.0</cbc:MultiplierFactorNumeric>
+               <cbc:Amount currencyID="EUR">200.0</cbc:Amount>
+               <cbc:BaseAmount currencyID="EUR">200.0</cbc:BaseAmount>
+               <cbc:PerUnitAmount currencyID="EUR">200.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+   </cac:TransportExecutionTerms>
+   <cac:Consignment>
+      <cbc:ID>ID</cbc:ID>
+      <cac:MainCarriageShipmentStage>
+         <cac:TransportEvent>
+            <cbc:TransportEventTypeCode>ORIGIN DEPOT</cbc:TransportEventTypeCode>
+            <cbc:Description>Plan</cbc:Description>
+         </cac:TransportEvent>
+         <cac:TransportEvent>
+            <cbc:TransportEventTypeCode>DESTINATION DEPOT</cbc:TransportEventTypeCode>
+            <cbc:Description>Plan</cbc:Description>
+         </cac:TransportEvent>
+      </cac:MainCarriageShipmentStage>
+      <cac:TransportHandlingUnit>
+         <cbc:ShippingMarks>ShippingMarks11</cbc:ShippingMarks>
+         <cac:TransportEquipment>
+            <cbc:ID>TBNN0123456</cbc:ID>
+            <cbc:TransportEquipmentTypeCode>20ft standard cntr</cbc:TransportEquipmentTypeCode>
+            <cbc:GrossWeightMeasure unitCode="unitCode2479">4545.0</cbc:GrossWeightMeasure>
+            <cbc:GrossVolumeMeasure unitCode="unitCode2480">0.0</cbc:GrossVolumeMeasure>
+            <cbc:TraceID>TraceID72</cbc:TraceID>
+            <cac:TransportEquipmentSeal>
+               <cbc:ID>6</cbc:ID>
+            </cac:TransportEquipmentSeal>
+         </cac:TransportEquipment>
+      </cac:TransportHandlingUnit>
+      <cac:TransportHandlingUnit>
+         <cac:GoodsItem>
+            <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+            <cac:GoodsItemContainer>
+               <cbc:ID>TBNN0123456</cbc:ID>
+            </cac:GoodsItemContainer>
+         </cac:GoodsItem>
+      </cac:TransportHandlingUnit>
+   </cac:Consignment>
+</ns2:TransportExecutionPlan>

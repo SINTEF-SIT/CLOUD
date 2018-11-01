@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns3:TransportExecutionPlanRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                   xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2"
+                                   xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                                   xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+                                   xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2"
+                                   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                                   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                                   xmlns:dsig11="http://www.w3.org/2009/xmldsig11#"
+                                   xmlns:ns0="urn:oasis:names:specification:ubl:schema:xsd:CommonSignatureComponents-2"
+                                   xmlns:ns3="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlanRequest-2"
+                                   xmlns:ns1="http://uri.etsi.org/01903/v1.4.1#"
+                                   xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                                   xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+                                   xmlns:sac="urn:oasis:names:specification:ubl:schema:xsd:SignatureAggregateComponents-2"
+                                   xmlns:sbc="urn:oasis:names:specification:ubl:schema:xsd:SignatureBasicComponents-2"
+                                   xmlns:cct="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2"
+                                   xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:TransportExecutionPlan-2 ../UBL-2.2/xsd/maindoc/UBL-TransportExecutionPlanRequest-2.2.xsd">
+   <cbc:UBLVersionID>2.2</cbc:UBLVersionID>
+   <cbc:CustomizationID>Common Framework</cbc:CustomizationID>
+   <cbc:ProfileID>PB</cbc:ProfileID>
+   <cbc:ID>610291</cbc:ID>
+   <cbc:IssueDate>2018-05-22</cbc:IssueDate>
+   <cbc:IssueTime>05:33:58.000</cbc:IssueTime>
+   <cbc:DocumentStatusCode>Firm</cbc:DocumentStatusCode>
+   <cbc:ActionCode>Create</cbc:ActionCode>
+   <cac:TransportUserParty>
+      <cac:PartyIdentification>
+         <cbc:ID>AMAA</cbc:ID>
+      </cac:PartyIdentification>
+   </cac:TransportUserParty>
+   <cac:TransportServiceProviderParty>
+      <cac:PartyIdentification>
+         <cbc:ID>CONCOR</cbc:ID>
+      </cac:PartyIdentification>
+   </cac:TransportServiceProviderParty>
+   <cac:MainTransportationService>
+      <cbc:TransportServiceCode>Global</cbc:TransportServiceCode>
+      <cac:ShipmentStage>
+         <cbc:TransportModeCode>RAIL</cbc:TransportModeCode>
+      </cac:ShipmentStage>
+   </cac:MainTransportationService>
+   <cac:AdditionalTransportationService>
+      <cbc:TransportServiceCode>Weighing</cbc:TransportServiceCode>
+   </cac:AdditionalTransportationService>
+   <cac:AdditionalTransportationService>
+      <cbc:TransportServiceCode>Origin Multistop</cbc:TransportServiceCode>
+   </cac:AdditionalTransportationService>
+   <cac:FromLocation>
+      <cbc:Description>TR</cbc:Description>
+      <cac:ValidityPeriod>
+         <cbc:StartDate>2018-05-25</cbc:StartDate>
+         <cbc:StartTime>07:07:00.000</cbc:StartTime>
+         <cbc:EndDate>2018-05-25</cbc:EndDate>
+         <cbc:EndTime>07:07:00.000</cbc:EndTime>
+      </cac:ValidityPeriod>
+      <cac:Address>
+         <cbc:MarkAttention>345</cbc:MarkAttention>
+         <cbc:CityName>Banjara Hills</cbc:CityName>
+         <cbc:PostalZone>500034</cbc:PostalZone>
+         <cac:Country>
+            <cbc:Name>India</cbc:Name>
+         </cac:Country>
+      </cac:Address>
+   </cac:FromLocation>
+   <cac:ToLocation>
+      <cac:ValidityPeriod>
+         <cbc:StartDate>2018-05-28</cbc:StartDate>
+         <cbc:StartTime>09:00:00.000</cbc:StartTime>
+         <cbc:EndDate>2018-05-28</cbc:EndDate>
+         <cbc:EndTime>09:00:00.000</cbc:EndTime>
+      </cac:ValidityPeriod>
+      <cac:Address>
+         <cbc:CityName>Chennai</cbc:CityName>
+         <cac:Country>
+            <cbc:Name>India</cbc:Name>
+         </cac:Country>
+      </cac:Address>
+   </cac:ToLocation>
+   <cac:TransportExecutionTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-599122-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>IN 500018_Sanathnagar ICD-IN 500018_Sanathnagar ICD-ROAD-CONCOR-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>Container Corporation of India Ltd.</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <!--Amount is transformed from Price in Transport Request (which is mandatory) but there is no value present in the input Transport Request XML!-->
+               <cbc:Amount currencyID="INR">0</cbc:Amount>
+               <cbc:BaseAmount currencyID="INR">9000.0</cbc:BaseAmount>
+               <cbc:PerUnitAmount currencyID="INR">9000.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-599122-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>IN 500018_Sanathnagar ICD-IN 500018_Sanathnagar ICD-ROAD-CONCOR-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>Container Corporation of India Ltd.</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <!--Amount is transformed from Price in Transport Request (which is mandatory) but there is no value present in the input Transport Request XML!-->
+               <cbc:Amount currencyID="INR">0</cbc:Amount>
+               <cbc:BaseAmount currencyID="INR">6000.0</cbc:BaseAmount>
+               <cbc:PerUnitAmount currencyID="INR">6000.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+      <cac:PaymentTerms>
+         <cbc:ID>2018-5-599122-0</cbc:ID>
+         <cac:TransportationService>
+            <cbc:TransportServiceCode>TransportServiceCode</cbc:TransportServiceCode>
+            <cbc:Name>IN 500018_Sanathnagar ICD-IN _Chennai-RAIL-CONCOR-2018-1</cbc:Name>
+            <cac:ResponsibleTransportServiceProviderParty>
+               <cac:PartyIdentification>
+                  <cbc:ID>Container Corporation of India Ltd.</cbc:ID>
+               </cac:PartyIdentification>
+            </cac:ResponsibleTransportServiceProviderParty>
+         </cac:TransportationService>
+         <cac:DeliveryTerms>
+            <cac:AllowanceCharge>
+               <cbc:ChargeIndicator>true </cbc:ChargeIndicator>
+               <!--Amount is transformed from Price in Transport Request (which is mandatory) but there is no value present in the input Transport Request XML!-->
+               <cbc:Amount currencyID="INR">0</cbc:Amount>
+               <cbc:BaseAmount currencyID="INR">7000.0</cbc:BaseAmount>
+               <cbc:AccountingCostCode>325</cbc:AccountingCostCode>
+               <cbc:PerUnitAmount currencyID="INR">7000.0</cbc:PerUnitAmount>
+               <cbc:ExtraChargesIndicator>false</cbc:ExtraChargesIndicator>
+            </cac:AllowanceCharge>
+         </cac:DeliveryTerms>
+      </cac:PaymentTerms>
+   </cac:TransportExecutionTerms>
+   <cac:Consignment>
+      <cbc:ID>ID</cbc:ID>
+      <cac:MainCarriageShipmentStage>
+         <cac:PlannedWaypointTransportEvent>
+            <cbc:TransportEventTypeCode>ORIGIN MULTISTOP</cbc:TransportEventTypeCode>
+         </cac:PlannedWaypointTransportEvent>
+      </cac:MainCarriageShipmentStage>
+      <cac:TransportHandlingUnit>
+         <cbc:ShippingMarks>ShippingMarks11</cbc:ShippingMarks>
+         <cac:TransportEquipment>
+            <cbc:ID>ABCU1231231</cbc:ID>
+            <cbc:TransportEquipmentTypeCode>40ft high cube cntr</cbc:TransportEquipmentTypeCode>
+            <cbc:GrossWeightMeasure unitCode="unitCode2479">1234.0</cbc:GrossWeightMeasure>
+            <cbc:GrossVolumeMeasure unitCode="unitCode2480">0.0</cbc:GrossVolumeMeasure>
+            <cbc:TraceID>TraceID72</cbc:TraceID>
+            <cac:Delivery>
+               <cbc:LatestDeliveryDate>2018-05-28</cbc:LatestDeliveryDate>
+               <cbc:LatestDeliveryTime>09:00:00.000</cbc:LatestDeliveryTime>
+            </cac:Delivery>
+            <cac:Pickup>
+               <cbc:EarliestPickupDate>2018-05-25</cbc:EarliestPickupDate>
+               <cbc:EarliestPickupTime>07:07:00.000</cbc:EarliestPickupTime>
+            </cac:Pickup>
+         </cac:TransportEquipment>
+      </cac:TransportHandlingUnit>
+      <cac:TransportHandlingUnit>
+         <cac:GoodsItem>
+            <cbc:HazardousRiskIndicator>false</cbc:HazardousRiskIndicator>
+            <cac:GoodsItemContainer>
+               <cbc:ID>ABCU1231231</cbc:ID>
+            </cac:GoodsItemContainer>
+         </cac:GoodsItem>
+      </cac:TransportHandlingUnit>
+   </cac:Consignment>
+</ns3:TransportExecutionPlanRequest>
